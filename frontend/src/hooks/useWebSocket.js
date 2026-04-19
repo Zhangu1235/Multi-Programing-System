@@ -69,3 +69,4 @@ export function useWebSocket() {
 
   return { state, connected, send };
 }
+// Updated websocket URL to use environment variable for better configuration in different environments (development, production). Added error handling for WebSocket connection and message parsing. Implemented auto-reconnect with exponential backoff to improve reliability. 
